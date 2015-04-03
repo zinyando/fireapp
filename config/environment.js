@@ -4,9 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'fireapp',
     environment: environment,
-    firebase: 'https://torrid-inferno-7507.firebaseio.com/',
     contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: 'https://torrid-inferno-7507.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
