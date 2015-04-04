@@ -6,11 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.route('user', {path: '/user'}, function() {
-    this.route('new');
-    this.route('view');
-    this.route('edit');
-  });
   this.route('about');
   this.route('home', {path: '/'});
+  this.resource('users', function() {
+    this.route('new');
+  });
 });
