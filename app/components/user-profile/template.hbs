@@ -1,0 +1,8 @@
+{{#if isUser}}
+<button class="btn btn-primary" {{action 'hideUser'}}>Hide User</button>
+<h3>Name   : {{name}}</h3>
+<h4>Email  : {{email}}</h4>
+<h4>Program: {{program}}</h4>
+{{else}}
+<button class="btn btn-primary" {{action 'showUser'}}>Show User</button>
+{{/if}}
